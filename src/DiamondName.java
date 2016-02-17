@@ -10,9 +10,6 @@ public class DiamondName {
 
   public void diamondAndNamePrint() {
     for (int i = 1; i <= lines; i++) {
-//      if (i == lines) {
-//        System.out.println("Bill");
-//      }
       for (int k = 0; k < lines - i; k++) {
         System.out.print(" ");
       }
@@ -24,6 +21,7 @@ public class DiamondName {
       }
       System.out.println();
     }
+
     System.out.println("Bill");
 
     for (int i = lines-1; i >= 1; i--) {
