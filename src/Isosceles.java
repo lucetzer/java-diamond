@@ -21,7 +21,7 @@ public class Isosceles {
   }
 
   public static void main(String[] args) {
-    new Isosceles(8).isoscelesPrint();
+    new Isosceles(5).isoscelesPrint();
   }
 }
 

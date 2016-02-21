@@ -3,9 +3,11 @@
  */
 public class DiamondName {
   int lines;
+  String name;
 
-  DiamondName(int n) {
+  DiamondName(int n, String yourName) {
     lines = n;
+    name = yourName;
   }
 
   public void diamondAndNamePrint() {
@@ -22,7 +24,7 @@ public class DiamondName {
       System.out.println();
     }
 
-    System.out.println("Bill");
+    System.out.println(name);
 
     for (int i = lines-1; i >= 1; i--) {
       for (int k = 1; k < lines - i; k++) {
@@ -40,6 +42,6 @@ public class DiamondName {
   }
 
   public static void main(String[] args) {
-    new DiamondName(3).diamondAndNamePrint();
+    new DiamondName(3, "Lucy").diamondAndNamePrint();
   }
 }
